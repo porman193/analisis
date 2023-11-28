@@ -46,31 +46,20 @@
                                     <table id="datatablesSimple">
                                         <thead>
                                             <tr>
+                                                <th>Id Registro Salidas</th>
                                                 <th>Id Registro</th>
-                                                <th>Placa</th>
-                                                <th>Id cliente</th>
-                                                <th>Id operario</th>
-                                                <th>Id plaza</th>
-                                                <th>Fecha Ingreso</th>
                                                 <th>Fecha Salida</th>
-                                                <th>Acciones</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                         <?php
-                                            $registros = $registro_vehiculodao->consultar_registro();
-                                            foreach($registros as $registro){
+                                            $salidas = $registro_vehiculodao->consultar_registro_salidas();
+                                            foreach($salidas as $salida){
                                                 echo "<tr>".
-                                                        "<td>".$registro['id_registro']."</td>".
-                                                        "<td>".$registro['placa']."</td>".
-                                                        "<td>".$registro['id_cliente']."</td>".
-                                                        "<td>".$registro['id_operario']."</td>".
-                                                        "<td>".$registro['id_plaza']."</td>".
-                                                        "<td>".$registro['fecha_ingreso']."</td>".
-                                                        "<td>".$registro['fecha_salida']."</td>".
-                                                        "<td><a href='eliminar_vehiculo.php?id_registro=".$registro['id_registro']."' class='btn btn-danger'>Eliminar</a> - 
-                                                             <a href='actualizar_vehiculo.php?id_registro=".$registro['id_registro']."' class='btn btn-danger'>Actualizar</a> </td>".
-                                                        "</tr>";
+                                                        "<td>".$salida['id_registro_salida']."</td>".
+                                                        "<td>".$salida['id_registro']."</td>".
+                                                        "<td>".$salida['fecha_salida']."</td>".
+                                                    "</tr>";
                                             }
                                         ?> 
                                                 

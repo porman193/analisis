@@ -24,7 +24,6 @@
                 require ('../../sidenavbarOP.php');
              
              ?>
-             
 
             <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
             <!-- |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| -->
@@ -32,7 +31,7 @@
             <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h1 class="mt-4">Registro de Vehiculos</h1>
+                        <h1 class="mt-4">Registrar Vehiculos</h1>
                         <ol class="breadcrumb mb-4">
                             <li class="breadcrumb-item active"></li>
                         </ol>
@@ -43,39 +42,44 @@
                                 Total de registros
                             </div>
                                 <div class="card-body">
-                                    <table id="datatablesSimple">
-                                        <thead>
-                                            <tr>
-                                                <th>Id Registro</th>
-                                                <th>Placa</th>
-                                                <th>Id cliente</th>
-                                                <th>Id operario</th>
-                                                <th>Id plaza</th>
-                                                <th>Fecha Ingreso</th>
-                                                <th>Fecha Salida</th>
-                                                <th>Acciones</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                        <?php
-                                            $registros = $registro_vehiculodao->consultar_registro();
-                                            foreach($registros as $registro){
-                                                echo "<tr>".
-                                                        "<td>".$registro['id_registro']."</td>".
-                                                        "<td>".$registro['placa']."</td>".
-                                                        "<td>".$registro['id_cliente']."</td>".
-                                                        "<td>".$registro['id_operario']."</td>".
-                                                        "<td>".$registro['id_plaza']."</td>".
-                                                        "<td>".$registro['fecha_ingreso']."</td>".
-                                                        "<td>".$registro['fecha_salida']."</td>".
-                                                        "<td><a href='eliminar_vehiculo.php?id_registro=".$registro['id_registro']."' class='btn btn-danger'>Eliminar</a> - 
-                                                             <a href='actualizar_vehiculo.php?id_registro=".$registro['id_registro']."' class='btn btn-danger'>Actualizar</a> </td>".
-                                                        "</tr>";
-                                            }
-                                        ?> 
-                                                
-                                        </tbody>
-                                    </table>
+                                <form action="insertar_vehi.php" method="post" class="row g-3">
+                                    <!-- Agregar campos del formulario según tus necesidades -->
+                                    <div class="col-md-6">
+                                        <label for="id_registro" class="form-label">id registro:</label>
+                                        <input type="text" name="id_registro" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="placa" class="form-label">Placa:</label>
+                                        <input type="text" name="placa" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="id_cliente" class="form-label">id cliente:</label>
+                                        <input type="text" name="id_cliente" class="form-control" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="id_operario" class="form-label">id operario:</label>
+                                        <input type="text" name="id_operario" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="id_plaza" class="form-label">id plaza:</label>
+                                        <input type="text" name="id_plaza" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="fecha_ingreso" class="form-label">fecha ingreso:</label>
+                                        <input type="date" name="fecha_ingreso" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-md-6">
+                                        <label for="fecha_salida" class="form-label">fecha salida:</label>
+                                        <input type="date" name="fecha_salida" class="form-control" required>
+                                    </div>
+
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-primary">Agregar Vehículo</button>
+                                    </div>
+                                </form>
                                 </div>
                             </div>
                         

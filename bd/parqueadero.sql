@@ -286,6 +286,18 @@ CREATE TABLE IF NOT EXISTS `vehiculo` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
+-- Estructura de tabla para la tabla `registro_salidas`
+--
+CREATE TABLE IF NOT EXISTS `registro_salidas` (
+  `id_registro_salida` varchar(20) NOT NULL,
+  `id_registro` varchar(20) NOT NULL,
+  `fecha_salida` date NOT NULL,
+  `monto_pago` double NOT NULL,
+  PRIMARY KEY (`id_registro_salida`),
+  KEY `id_registro` (`id_registro`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
 -- Restricciones para tablas volcadas
 --
 
@@ -337,6 +349,12 @@ ALTER TABLE `registro`
 ALTER TABLE `vehiculo`
   ADD CONSTRAINT `vehiculo_ibfk_1` FOREIGN KEY (`id_cliente`) REFERENCES `cliente` (`id_cliente`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;
+
+--
+-- Filtros para la tabla `registro_salidas`
+--
+ALTER TABLE `registro_salidas`
+  ADD CONSTRAINT `registro_salidas_ibfk_1` FOREIGN KEY (`id_registro`) REFERENCES `registro` (`id_registro`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

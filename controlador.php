@@ -9,6 +9,7 @@ require_once('ClasesDAO/PlazasDAO.php');
 require_once('ClasesDAO/NormatividadDAO.php');
 require_once('ClasesDAO/VehiculosDAO.php');
 require_once('ClasesDAO/RegistroDAO.php');
+require_once('ClasesDao/registrar_vehiculoDAO.php');
 $conex = Conexion::conexion();
 $login = new Login();
 $clientedao = new ClienteDAO();
@@ -19,4 +20,6 @@ $plazasdao = new PlazasDAO();
 $normatividaddao = new NormatividadDAO();
 $vehiculosdao = new VehiculosDAO();
 $registrodao = new RegistrosDao();
+$login = new Login();
+$registro_vehiculodao = new registrar_vehiculoDAO();
 ?>
