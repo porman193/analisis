@@ -4,7 +4,7 @@ class Conexion{
         try {
             $dsn = "mysql:host=localhost;dbname=parqueadero;port=3306";
             $usuario = "root";
-            $password = "";
+            $password = "calde0102";
             $opt = [PDO::ATTR_ERRMODE => PDO::ERRMODE_EXCEPTION];
             $conex = new PDO($dsn,$usuario,$password,$opt);
             

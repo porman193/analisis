@@ -15,10 +15,10 @@
                 </a>
                 <div class="collapse" id="collapseLayouts" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="CrudFront/Plazas/info_plazas.php">Plazas del parqueadero</a>
-                        <a class="nav-link" href="CrudFront/Plazas/asignar_plazas.php">Asignar/Actualizar plazas</a>
-                        <a class="nav-link" href="CrudFront/Plazas/consultar_plazas.php">Consultar Plazas</a>
-                        <a class="nav-link" href="CrudFront/Plazas/eliminar_plazas.php">Eliminar plazas</a> 
+                        <a class="nav-link" href="/parqueadero/CrudFront/Plazas/info_plazas.php">Plazas del parqueadero</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Plazas/asignar_plazas.php">Asignar/Actualizar plazas</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Plazas/consultar_plazas.php">Consultar Plazas</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Plazas/eliminar_plazas.php">Eliminar plazas</a> 
                     </nav>
                 </div>
 
@@ -29,10 +29,10 @@
                 </a>
                 <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="CrudFront/Registro/registro_vehiculos.php">Registro de Vehiculos</a>
-                        <a class="nav-link" href="CrudFront/Registro/registrar_vehiculo.php">Registrar Vehiculo</a>
-                        <a class="nav-link" href="CrudFront/Registro/registrar_salidas.php">Salida</a>
-                        <a class="nav-link" href="CrudFront/Registro/registro_salidas.php">Registro de Salidas</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registro_vehiculos.php">Registro de Vehiculos</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registrar_vehiculo.php">Registrar Vehiculo</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registrar_salidas.php">Salida</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registro_salidas.php">Registro de Salidas</a>
                     </nav>
                 </div>
 
@@ -43,8 +43,8 @@
                 </a>
                 <div class="collapse" id="collapseLayouts3" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/home/parqueadero/CrudFront/Facturacion/facturacion.php">Facturas</a>
-                        <a class="nav-link" href="#">Opcion 2</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/facturacion.php">Facturas</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/ingresar_factura.php">Ingresar factura</a>
                         <a class="nav-link" href="#">Opcion 3</a> 
                     </nav>
                 </div>
