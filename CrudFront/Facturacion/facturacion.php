@@ -52,38 +52,35 @@ $metodos_guardados=$metodo_pagodao->listar_metodos_pago($_SESSION['id']);
                                                     <th>Id Registro</th>
                                                     <th>Id Cliente</th>
                                                     <th>Placa del Vehiculo</th>
+                                                    <th>Id Plaza</th>
                                                     <th>Fecha Facturación</th>
                                                     <th>Fecha Cancelación</th>
                                                     <th>Estado</th>
+                                                    <th>Acciones</th>
                                                 </tr>
                                             </thead>
-                                            <?php
-                                                for($i=0;$i<1;$i++){
-                                            ?> 
                                             <tbody>
-                                                <?php
-                                                                                                        
-                                                ?>
-                                                    <tr>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                        <td></td>
-                                                    </tr>
-                                                <?php
-                                                    
-                                                ?>
+                                            <?php
+                                                $facturas = $facturadao->consultarFacturas();
+                                                foreach($facturas as $factura){
+                                                    echo "<tr>".
+                                                            "<td>".$factura['id_factura']."</td>".
+                                                            "<td>".$factura['id_registro']."</td>".
+                                                            "<td>".$factura['id_cliente']."</td>".
+                                                            "<td>".$factura['placa']."</td>".
+                                                            "<td>".$factura['id_plaza']."</td>".
+                                                            "<td>".$factura['fecha_facturacion']."</td>".
+                                                            "<td>".$factura['fecha_cancelacion']."</td>".
+                                                            "<td>".$factura['estado']."</td>".
+                                                            "<td><a href='eliminar_factura.php?id_factura=".$factura['id_factura']."' class='btn btn-danger'>Eliminar</a> - 
+                                                                 <a href='actualizar_factura.php?id_factura=".$factura['id_factura']."' class='btn btn-danger'>Actualizar</a> </td>".
+                                                            "</tr>";
+                                                }
+                                            ?> 
                                             </tbody>
                                         </table>
                                     </div>
                                 </div>
-                                <?php
-                                    }                                
-                                ?>
-                            
                         </div>
                     </div>
                 </main>
