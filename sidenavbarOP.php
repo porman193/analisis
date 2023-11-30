@@ -29,8 +29,8 @@
                 </a>
                 <div class="collapse" id="collapseLayouts2" aria-labelledby="headingOne" data-bs-parent="#sidenavAccordion">
                     <nav class="sb-sidenav-menu-nested nav">
-                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registro_vehiculos.php">Registro de Vehiculos</a>
-                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registrar_vehiculo.php">Registrar Vehiculo</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registro_vehiculos.php">Registros</a>
+                        <a class="nav-link" href="/parqueadero/CrudFront/Registro/registrar_vehiculo.php">Ingresar Registro</a>
                         <a class="nav-link" href="/parqueadero/CrudFront/Registro/registrar_salidas.php">Salida</a>
                         <a class="nav-link" href="/parqueadero/CrudFront/Registro/registro_salidas.php">Registro de Salidas</a>
                     </nav>
