@@ -45,7 +45,7 @@
                     <nav class="sb-sidenav-menu-nested nav">
                         <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/facturacion.php">Facturas</a>
                         <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/ingresar_factura.php">Ingresar factura</a>
-                        <a class="nav-link" href="#">Opcion 3</a> 
+                        <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/eliminar_factura.php">Eliminar factura</a> 
                     </nav>
                 </div>
 
