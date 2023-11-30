@@ -36,5 +36,14 @@
             $query = $conex->prepare($sql);
             $query->execute([$placa]);
         }
+
+        public function consultar_registros_por_fecha($fechaInicio, $fechaFin){
+            $conex=Conexion::conexion();
+            $sql = "SELECT * FROM registro WHERE fecha_ingreso BETWEEN ? AND ?";
+            $query = $conex->prepare($sql);
+            $query->execute([$fechaInicio, $fechaFin]);
+            $registros = $query->fetchAll(PDO::FETCH_ASSOC);
+            return $registros;
+        }
    }
 ?>

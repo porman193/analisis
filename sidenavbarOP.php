@@ -46,6 +46,7 @@
                         <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/facturacion.php">Facturas</a>
                         <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/ingresar_factura.php">Ingresar factura</a>
                         <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/eliminar_factura.php">Eliminar factura</a> 
+                        <a class="nav-link" href="/parqueadero/CrudFront/Facturacion/reporte_entradas.php">Reportes de entrada</a> 
                     </nav>
                 </div>
 
