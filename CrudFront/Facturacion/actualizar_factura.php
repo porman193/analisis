@@ -98,9 +98,6 @@
                                         <label for="estado" class="form-label">Estado:</label>
                                         <input type="text" name="estado" class="form-control" value="<?php echo $estado_actual; ?>" required>
                                     </div>
-
-                                
-
                                 <div class="col-12">
                                     <button type="submit" class="btn btn-primary">Actualizar Factura</button>
                                 </div>
