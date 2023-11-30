@@ -17,5 +17,12 @@ class FacturaDAO{
         $consulta = $db->prepare($sql);
         $consulta->execute([$id_factura,$id_registro,$id_cliente,$placa,$id_plaza,$fecha_facturacion,$fecha_cancelacion,$estado]);
     }
+
+    public function eliminar_factura($id_factura){
+        $db = Conexion::conexion();
+        $sql = "DELETE FROM factura WHERE id_factura = ?";
+        $consulta = $db->prepare($sql);
+        $consulta->execute([$id_factura]);
+    }
 }
 ?>
